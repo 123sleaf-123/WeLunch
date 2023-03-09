@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DRCard</class>
+ <widget class="QWidget" name="DRCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>611</width>
+    <height>172</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>150</height>
+      </size>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="FoodInOrderCardImageButton" name="pushButton_PicToDR">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="FoodInOrderCardTextButton" name="pushButton_TextToDR">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_ratings">
+     <item>
+      <widget class="QLabel" name="RatingsSymbol">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>好评率</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Ratings">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_speed">
+     <item>
+      <widget class="QLabel" name="SpeedSymbol">
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>送餐速度</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Speed">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_distance">
+     <item>
+      <widget class="QLabel" name="Distance">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>距离</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="SalesVolumnSymbol">
+         <property name="text">
+          <string>销量</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="SalesVolumn">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FoodInOrderCardImageButton</class>
+   <extends>QPushButton</extends>
+   <header>foodinordercardimagebutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>FoodInOrderCardTextButton</class>
+   <extends>QPushButton</extends>
+   <header>foodinordercardtextbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_TextToDR</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_PicToDR</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>161</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

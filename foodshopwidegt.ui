@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FoodShopWidegt</class>
+ <widget class="QWidget" name="FoodShopWidegt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>540</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>541</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLineEdit" name="Search">
+      <property name="placeholderText">
+       <string>输入要搜索的餐厅名称</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Search">
+      <property name="text">
+       <string>搜索</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>355</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QComboBox" name="comboBox_4">
+      <item>
+       <property name="text">
+        <string>全部美食</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>鲁菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>川菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>粤菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>苏菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>闽菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>浙菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>湘菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>徽菜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>奶茶甜点</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>快餐小吃</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>火锅</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>烧烤</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>西餐</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_3">
+      <item>
+       <property name="text">
+        <string>附近</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>500m</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1km</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3km</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>5km</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10km</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>智能推荐</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>销量</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>好评</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>送餐速度</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_2">
+      <item>
+       <property name="text">
+        <string>筛选</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>超时赔付</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>下单返券</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>下单立减</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0配送费</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="DRCardWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>351</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
